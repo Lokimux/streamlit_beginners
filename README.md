@@ -33,7 +33,7 @@ To run this project, you need a basic understanding of HTML, CSS, and JavaScript
 ## File Structure
 
 ```plaintext
-streamlit-guide-blog/
+streamlit_beginners/
 ├── index.html
 ├── styles.css
 └── README.md
