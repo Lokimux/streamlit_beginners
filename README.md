@@ -24,7 +24,7 @@ To run this project, you need a basic understanding of HTML, CSS, and JavaScript
 
 2. Navigate to the project directory:
     ```bash
-    cd streamlit-guide-blog
+    cd streamlit_beginners
     ```
 
 3. Open `index.html` in your web browser to view the guide.
