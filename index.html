@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Comprehensive Guide to Using Streamlit Functions and Methods</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>streamlit python for beginners</h1>
+        <p>Streamlit is a powerful and easy-to-use Python library that lets you create interactive web applications for machine learning and data science with minimal effort. Whether you're a beginner or an experienced developer, this guide will walk you through the essential functions and methods you need to know to get started with Streamlit.</p>
+        
+        <h2>Getting Started with Streamlit</h2>
+        <h3>Installation</h3>
+        <div class="code-container">
+            <pre><code>pip install streamlit</code></pre>
+            <button class="copy-btn" onclick="copyToClipboard('pip install streamlit')">Copy the code</button>
+        </div>
+
+        <h3>Running Your First App</h3>
+        <div class="code-container">
+            <pre><code>streamlit run your_script.py</code></pre>
+            <button class="copy-btn" onclick="copyToClipboard('streamlit run your_script.py')">Copy the code</button>
+        </div>
+
+        <h3>Importing Streamlit</h3>
+        <div class="code-container">
+            <pre><code>import streamlit as st</code></pre>
+            <button class="copy-btn" onclick="copyToClipboard('import streamlit as st')">Copy the code</button>
+        </div>
+
+        <h2>Displaying Text</h2>
+        <ul>
+            <li><code>st.title('Title')</code>: Displays a title.</li>
+            <li><code>st.header('Header')</code>: Displays a header.</li>
+            <li><code>st.subheader('Subheader')</code>: Displays a subheader.</li>
+            <li><code>st.text('Text')</code>: Displays plain text.</li>
+            <li><code>st.markdown('**Markdown**')</code>: Displays text formatted with Markdown.</li>
+            <li><code>st.code('print("Hello World")')</code>: Displays a code block.</li>
+            <li><code>st.latex(r'2+2=4')</code>: Displays LaTeX formatted text.</li>
+        </ul>
+
+        <h2>Displaying Data</h2>
+        <ul>
+            <li><code>st.write(data)</code>: Writes any object (text, data, Markdown, etc.) to the app.</li>
+            <li><code>st.dataframe(df)</code>: Displays a DataFrame as an interactive table.</li>
+            <li><code>st.table(df)</code>: Displays a static table.</li>
+            <li><code>st.json(json_obj)</code>: Displays JSON.</li>
+        </ul>
+
+        <h2>Media Elements</h2>
+        <ul>
+            <li><code>st.image(image)</code>: Displays an image.</li>
+            <li><code>st.audio(audio)</code>: Displays an audio player.</li>
+            <li><code>st.video(video)</code>: Displays a video player.</li>
+        </ul>
+
+        <h2>Displaying Widgets</h2>
+        <ul>
+            <li><code>st.button('Button')</code>: Creates a button.</li>
+            <li><code>st.checkbox('Checkbox')</code>: Creates a checkbox.</li>
+            <li><code>st.radio('Radio', options)</code>: Creates a set of radio buttons.</li>
+            <li><code>st.selectbox('Selectbox', options)</code>: Creates a dropdown select box.</li>
+            <li><code>st.multiselect('Multiselect', options)</code>: Creates a multiselect.</li>
+            <li><code>st.slider('Slider', min_value, max_value)</code>: Creates a slider.</li>
+            <li><code>st.select_slider('Select Slider', options)</code>: Creates a select slider.</li>
+            <li><code>st.text_input('Text Input')</code>: Creates a text input box.</li>
+            <li><code>st.text_area('Text Area')</code>: Creates a text area.</li>
+            <li><code>st.number_input('Number Input')</code>: Creates a number input.</li>
+            <li><code>st.date_input('Date Input')</code>: Creates a date input.</li>
+            <li><code>st.time_input('Time Input')</code>: Creates a time input.</li>
+            <li><code>st.file_uploader('File Uploader')</code>: Creates a file uploader.</li>
+            <li><code>st.color_picker('Color Picker')</code>: Creates a color picker.</li>
+        </ul>
+
+        <h2>Control Flow</h2>
+        <ul>
+            <li><code>st.stop()</code>: Stops execution and prevents updating the app.</li>
+        </ul>
+
+        <h2>Layouts and Containers</h2>
+        <ul>
+            <li><code>st.sidebar</code>: Access sidebar elements.</li>
+            <li><code>st.beta_expander('Expander')</code>: Creates an expandable container.</li>
+            <li><code>st.beta_container()</code>: Creates a container for elements.</li>
+        </ul>
+
+        <h2>Status Elements</h2>
+        <ul>
+            <li><code>st.spinner('Spinner')</code>: Displays a spinner while executing.</li>
+            <li><code>st.progress(progress)</code>: Displays a progress bar.</li>
+            <li><code>st.success('Success')</code>: Displays a success message.</li>
+            <li><code>st.info('Info')</code>: Displays an informational message.</li>
+            <li><code>st.warning('Warning')</code>: Displays a warning message.</li>
+            <li><code>st.error('Error')</code>: Displays an error message.</li>
+            <li><code>st.exception(e)</code>: Displays an exception.</li>
+        </ul>
+
+        <h2>Plotting and Charts</h2>
+        <ul>
+            <li><code>st.line_chart(data)</code>: Displays a line chart.</li>
+            <li><code>st.area_chart(data)</code>: Displays an area chart.</li>
+            <li><code>st.bar_chart(data)</code>: Displays a bar chart.</li>
+            <li><code>st.pyplot(fig)</code>: Displays a Matplotlib figure.</li>
+            <li><code>st.altair_chart(chart)</code>: Displays an Altair chart.</li>
+            <li><code>st.vega_lite_chart(data, spec)</code>: Displays a Vega-Lite chart.</li>
+            <li><code>st.plotly_chart(fig)</code>: Displays a Plotly chart.</li>
+            <li><code>st.bokeh_chart(fig)</code>: Displays a Bokeh chart.</li>
+            <li><code>st.deck_gl_chart(pydeck_obj)</code>: Displays a PyDeck chart.</li>
+            <li><code>st.graphviz_chart(dot)</code>: Displays a Graphviz chart.</li>
+        </ul>
+
+        <h2>Utilities</h2>
+        <ul>
+            <li><code>st.cache(func)</code>: Caches a function to avoid re-running it.</li>
+            <li><code>st.set_page_config(title, layout, initial_sidebar_state)</code>: Sets the page configuration.</li>
+        </ul>
+
+        <h2>Example App</h2>
+        <div class="code-container">
+            <pre><code>
+import streamlit as st
+import pandas as pd
+import numpy as np
+
+# Title and text
+st.title('My First Streamlit App')
+st.text('This is some text.')
+
+# Display a dataframe
+df = pd.DataFrame(np.random.randn(10, 5), columns=('col %d' % i for i in range(5)))
+st.dataframe(df)
+
+# Interactive widgets
+if st.button('Say hello'):
+    st.write('Why hello there!')
+else:
+    st.write('Goodbye')
+
+# Slider
+value = st.slider('Select a value', 0, 100)
+st.write('Value selected:', value)
+
+# Line chart
+chart_data = pd.DataFrame(np.random.randn(20, 3), columns=['a', 'b', 'c'])
+st.line_chart(chart_data)
+
+# Sidebar
+st.sidebar.header('Sidebar header')
+sidebar_value = st.sidebar.slider('Select a sidebar value', 0, 100)
+st.sidebar.write('Sidebar value selected:', sidebar_value)
+            </code></pre>
+            <button class="copy-btn" onclick="copyToClipboard(`
+import streamlit as st
+import pandas as pd
+import numpy as np
+
+# Title and text
+st.title('My First Streamlit App')
+st.text('This is some text.')
+
+# Display a dataframe
+df = pd.DataFrame(np.random.randn(10, 5), columns=('col %d' % i for i in range(5)))
+st.dataframe(df)
+
+# Interactive widgets
+if st.button('Say hello'):
+    st.write('Why hello there!')
+else:
+    st.write('Goodbye')
+
+# Slider
+value = st.slider('Select a value', 0, 100)
+st.write('Value selected:', value)
+
+# Line chart
+chart_data = pd.DataFrame(np.random.randn(20, 3), columns=['a', 'b', 'c'])
+st.line_chart(chart_data)
+
+# Sidebar
+st.sidebar.header('Sidebar header')
+sidebar_value = st.sidebar.slider('Select a sidebar value', 0, 100)
+st.sidebar.write('Sidebar value selected:', sidebar_value)
+            `)">Copy the code</button>
+        </div>
+
+        <p>This comprehensive guide provides a solid foundation for creating your own Streamlit applications. Happy coding, and enjoy building interactive web apps with Streamlit!</p>
+    </div>
+
+    <script>
+        function copyToClipboard(text) {
+            const textarea = document.createElement('textarea');
+            textarea.value = text;
+            document.body.appendChild(textarea);
+            textarea.select();
+            document.execCommand('copy');
+            document.body.removeChild(textarea);
+            alert('Code copied to clipboard!');
+        }
+    </script>
+</body>
+</html>
