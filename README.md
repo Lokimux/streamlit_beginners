@@ -19,7 +19,7 @@ To run this project, you need a basic understanding of HTML, CSS, and JavaScript
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/yourusername/streamlit-guide-blog.git
+    https://github.com/Lokimux/streamlit_beginners.git
     ```
 
 2. Navigate to the project directory:
@@ -36,4 +36,4 @@ streamlit-guide-blog/
 ├── index.html
 ├── styles.css
 └── README.md
-'''
+
